@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook - log in or sign up</title>
 </head>
+
+<link rel="stylesheet" href="style.css">
+
 <body>
 
     <!-- HEADER -->
-    <div class="header-section">
+    <header id="main-header" class="header-section">
         <div>
             <!-- Icon -->
             <img src="fake_icon.png" alt="Facebook icon">
@@ -16,7 +20,7 @@
         <div>
             <span>Khám phá những điều bạn yêu thích.</span>
         </div>
-    </div>
+    </header>
 
     <!-- ILLUSTRATION -->
     <div class="illustration-section">
@@ -24,30 +28,31 @@
     </div>
 
     <!-- LOGIN FORM -->
-    <div class="login-section">
+    <main id="login-container" class="login-section">
         <h1>Đăng nhập vào Facebook</h1>
-        
-        <form action="" method="POST">
-            <div>
+
+        <form action="" method="POST" id="login-form">
+            <div class="input-group">
                 <label>
-                    <input type="email" name="email" required>
-                    Email hoặc số di động
+                    <input type="email" name="email" required placeholder="Email hoặc số di động">
                 </label>
             </div>
-            <div>
+            <div class="input-group">
                 <label>
-                    <input type="password" name="password" required>
-                    Mật khẩu
+                    <input type="password" name="password" required placeholder="Mật khẩu">
                 </label>
             </div>
-            <div>
-                <button type="submit">Đăng nhập</button>
+            <div class="action-group">
+                <button type="submit" id="btn-login">Đăng nhập</button>
             </div>
         </form>
-        
-        <div><a href="#">Quên mật khẩu?</a></div>
-        <div><a href="#">Tạo tài khoản mới</a></div>
-    </div>
+
+        <div class="links-group">
+            <a href="#" class="link-forgot">Quên mật khẩu?</a>
+            <a href="#" class="link-create">Tạo tài khoản mới</a>
+        </div>
+
+    </main>
 
     <!-- META LOGO -->
     <div class="logo-section">
@@ -58,15 +63,20 @@
     <hr>
 
     <!-- FOOTER LINKS -->
-    <footer class="footer-section">
-        <div>Tiếng Việt</div>
-        <div><a href="#">English (UK)</a></div>
-        <div><a href="#">中文(台灣)</a></div>
-        <div><a href="#">한국어</a></div>
-        <div><a href="#">日本語</a></div>
-        <div><a href="#">Français (France)</a></div>
-        <div><a href="#">ภาษาไทย</a></div>
-        <div><a href="#">Ngôn ngữ khác...</a></div>
+    <footer id="main-footer" class="footer-section">
+
+        <ul class="language-list"></ul>
+        <li>Tiếng Việt</li>
+        <li><a href="#">English (UK)</a></li>
+        <li><a href="#">中文(台灣)</a></li>
+        <li><a href="#">한국어</a></li>
+        <li><a href="#">日本語</a></li>
+        <li><a href="#">Français (France)</a></li>
+        <li><a href="#">ภาษาไทย</a></li>
+        <li><a href="#">Ngôn ngữ khác...</a></li>
+        </ul>
+
+
         <div><a href="#">Đăng ký</a></div>
         <div><a href="#">Đăng nhập</a></div>
         <div><a href="#">Messenger</a></div>
@@ -91,8 +101,10 @@
         <div><a href="#">Điều khoản</a></div>
         <div><a href="#">Trợ giúp</a></div>
         <div><a href="#">Tải thông tin liên hệ lên & đối tượng không phải người dùng</a></div>
-        <div>Meta © 2026</div>
+        <div class="copyright">Meta © 2026</div>
+
     </footer>
 
 </body>
+
 </html>
